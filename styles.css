@@ -7,14 +7,57 @@
 }
 body {
   display: flex;
+  background-color: purple; /* Set background color to pink */
+
 }
 #staffGallery{
   width: 70vw;
-  display: inherit;
+  display: flex; /* Apply Flexbox to the container */
+  justify-content: space-between; /* Evenly distribute items along the main axis */
+  align-items: center; /* Center items along the cross axis */
 
 }
 .galleryImage{
   width: 100%;
   height: auto;
   height: 300px;
+}
+
+h1 {
+  color: green;
+  font-family: "Times New Roman"
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  body {
+    flex-direction: column; 
+  }
+
+  #logoBar {
+    width: 100%;
+    height: auto;
+  }
+
+  #siteLogo {
+    width: 50%; 
+    margin: auto;
+  }
+
+  #staffGallery {
+    width: 100%; 
+  }
 }
